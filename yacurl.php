@@ -17,7 +17,7 @@
  * string get(string $url);
  * string post(string $url, array $param, [int $type = 0], [bool $use_http_build_query = true]);
  *
- * Note: [squared $param] are optional
+ * Note: [squared $arguments] are optional
  * 
  * ---------------------------------------------------------------
  * Example 1: Set cookie prefix, set follow location, enable debug
