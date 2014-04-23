@@ -36,7 +36,7 @@
  * echo $response;
  *
  * ---------------------------------------------------------------
- * Example 2: Set delay before http request
+ * Example 2: Set delay before http requests
  * ---------------------------------------------------------------
  * //static delay
  * $config = array('delay' => 5);
@@ -61,7 +61,7 @@
  * routine instead of http_build_query(). 
  * This custom routine is similar to http_build_query() but ignores "*" char.
  * Example: http_build_query('abc*def g') = 'abc%2Aef%20g
- * custom routine encodes it as 'abc*def%20'.
+ * Internal routine encodes it as 'abc*def%20'.
  * 
  * ---------------------------------------------------------------
  * Configuration
@@ -104,9 +104,9 @@ class YACurL {
 		if ($this->_curl_config['debug'])
 		{
 			error_reporting(-1); 
-	        ini_set('display_errors', TRUE);
-	        set_time_limit(0);
-	        ini_set('memory_limit', '-1');
+			ini_set('display_errors', TRUE);
+			set_time_limit(0);
+			ini_set('memory_limit', '-1');
 		}
 
 
