@@ -81,14 +81,14 @@ Example:
 Configuration 
 -------------
 
-- array header
-- string encoding
-- string cookie_prefix
-- bool auto_referer
-- bool return_transfer
-- bool follow_location
-- int delay
-- bool debug
+- _(array)_ header
+- _(string)_ encoding
+- _(string)_ cookie_prefix
+- _(bool)_ auto_referer
+- _(bool)_ return_transfer
+- _(bool)_ follow_location
+- _(int)_ delay
+- _(bool)_ debug
 
 
 Default:
