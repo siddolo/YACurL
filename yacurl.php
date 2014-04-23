@@ -3,11 +3,11 @@
  * YACurL 0.1a
  * Yet Another Curl Library - an open source curl library for PHP
  *
- * @author 		Pasquale 'sid' Fiorillo
+ * @author 	Pasquale 'sid' Fiorillo
  * @copyright	Copyright (c) 2014, Pasquale Fiorillo.
- * @license		GPLv3
- * @link 		http://github.com/siddolo/yacurl
- * @version		0.1a
+ * @license	GPLv3
+ * @link 	http://github.com/siddolo/yacurl
+ * @version	0.1a
  *
  *
  * ---------------------------------------------------------------
