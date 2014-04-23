@@ -38,8 +38,8 @@ echo $response;
 ```
 
 
-Example 2: Set delay before http request
-----------------------------------------
+Example 2: Set delay before http requests
+-----------------------------------------
 
 ```php
 //static delay
