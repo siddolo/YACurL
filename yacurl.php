@@ -38,13 +38,13 @@
  * ---------------------------------------------------------------
  * Example 2: Set delay before http requests
  * ---------------------------------------------------------------
- * //static delay
- * $config = array('delay' => 5);
+ * //static delay 0.5 seconds (= half second)
+ * $config = array('delay' => 500000);
  * $curl = New YACurL($config);
  * 
  * //random delay from 1 to 5 seconds
  * $config = array(
- * 	'delay' => array(1,5);
+ * 	'delay' => array(1000000, 5000000);
  * );
  * $curl = New YACurL($config);
  *
@@ -175,9 +175,9 @@ class YACurL {
 	{
 		if ($this->_curl_config['delay'])
 			if (!is_array($this->_curl_config['delay']))
-				sleep($this->_curl_config['delay']);
+				usleep($this->_curl_config['delay']);
 			else
-				sleep(rand($this->_curl_config['delay'][0], $this->_curl_config['delay'][1]));
+				usleep(rand($this->_curl_config['delay'][0], $this->_curl_config['delay'][1]));
 	}
 
 	private function debug($msg)
